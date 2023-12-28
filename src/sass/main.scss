@@ -1,0 +1,110 @@
+@use 'colors' as *;
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-size: 1rem;
+	font-family: 'Space Grotesk', sans-serif;
+	width: 100vw;
+	height: 100vh;
+}
+
+// MAIN
+
+.main {
+	padding: 0.5rem;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	width: 100%;
+	height: 100%;
+	background-color: $black;
+	&__item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0.5rem;
+		cursor: pointer;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+
+		&-icon {
+			font-size: 50rem;
+		}
+
+		&-quote {
+			padding: 2rem;
+			font-size: 3rem;
+			text-align: center;
+		}
+
+		&-author {
+			font-size: 2rem;
+		}
+
+		&:nth-child(1) {
+			background-image: url(../img/about_me.jpg);
+		}
+
+		&:nth-child(2) {
+			background-color: $red;
+		}
+
+		&:nth-child(3) {
+			background-color: $lavender;
+			background-image: url(https://picsum.photos/800/800);
+		}
+
+		&:nth-child(4) {
+			background-color: $green;
+		}
+
+		&:nth-child(5) {
+			background-color: $light-blue;
+		}
+
+		&:nth-child(6) {
+			background-color: $purple;
+			flex-direction: column;
+		}
+
+		&:nth-child(7) {
+			background-color: $gray;
+		}
+
+		&:nth-child(8) {
+			background-color: $pink;
+			background-image: url(https://random.imagecdn.app/800/800);
+		}
+
+		// &--one {
+		// 	margin: 2rem;
+		// 	grid-column: 1/2;
+		// 	background-color: transparent;
+		// }
+
+		// &--two {
+		// 	grid-column: 2/3;
+		// 	background-color: $red;
+		// }
+	}
+}
+
+// MEDIA
+
+@import './small';
+@import './medium';
+@import './large';
+@import './_xlarge';
