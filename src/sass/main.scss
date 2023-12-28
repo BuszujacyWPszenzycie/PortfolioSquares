@@ -34,14 +34,29 @@ body {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		flex-direction: column;
 		margin: 0.5rem;
 		cursor: pointer;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
+		position: relative;
+
+		&:hover {
+			.main__item-icon {
+				transform: rotateY(-180deg);
+				opacity: 0;
+			}
+
+			.main__item-back {
+				transform: rotateY(0);
+				opacity: 1;
+			}
+		}
 
 		&-icon {
 			font-size: 50rem;
+			transition: transform 1s, opacity 1s;
 		}
 
 		&-quote {
@@ -52,6 +67,34 @@ body {
 
 		&-author {
 			font-size: 2rem;
+		}
+
+		&-back {
+			transition: transform 1s, opacity 1s;
+			background-color: $white;
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+
+			&-p {
+				font-size: 4rem;
+			}
+
+			&-icon {
+				position: absolute;
+				font-size: 6rem;
+				padding: 2rem;
+				bottom: 0;
+				right: 0;
+			}
 		}
 
 		&:nth-child(1) {
