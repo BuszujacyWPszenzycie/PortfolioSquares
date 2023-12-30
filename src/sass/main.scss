@@ -26,9 +26,9 @@ body {
 	height: 100vh;
 }
 
-// MAIN
+// header
 
-.main {
+.header {
 	padding: 0.5rem;
 	display: grid;
 	// grid-template-columns: repeat(4, 1fr);
@@ -52,12 +52,12 @@ body {
 		position: relative;
 
 		&:hover {
-			.main__item-icon {
+			.header__item-icon {
 				transform: rotateY(-180deg);
 				opacity: 0;
 			}
 
-			.main__item-back {
+			.header__item-back {
 				transform: rotateY(0);
 				opacity: 1;
 			}
