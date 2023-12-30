@@ -9,4 +9,37 @@
 			}
 		}
 	}
+
+	// ABOUT
+
+	.about {
+		&__p {
+			padding: 1.8rem;
+			font-size: 1.8rem;
+		}
+	}
+
+	// PORTFOLIO
+
+	.portfolio {
+		&__item {
+			padding: 1.5rem;
+		}
+		&__top {
+			width: 400px;
+			height: 200px;
+		}
+
+		&__bottom {
+			width: 450px;
+		}
+
+		&__title {
+			font-size: 2.2rem;
+		}
+
+		&__description {
+			font-size: 1.4rem;
+		}
+	}
 }
