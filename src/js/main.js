@@ -1,6 +1,6 @@
 const url = 'https://api.quotable.io/random'
-const quote = document.querySelector('.main__item-quote')
-const author = document.querySelector('.main__item-author')
+const quote = document.querySelector('.header__item-quote')
+const author = document.querySelector('.header__item-author')
 
 let getQuote = () => {
 	fetch(url)

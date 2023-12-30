@@ -4,6 +4,29 @@
 			&-icon {
 				font-size: 30rem;
 			}
+
+			&-quote {
+				font-size: 1.9rem;
+			}
+
+			&-author {
+				font-size: 1.6rem;
+			}
+		}
+	}
+
+	.about {
+		flex-direction: row;
+
+		&__box {
+			&--right {
+				display: flex;
+			}
+		}
+		&__p {
+			color: $white;
+			padding: 1.5rem;
+			font-size: 1.4rem;
 		}
 	}
 }
