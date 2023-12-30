@@ -1,2 +1,9 @@
 @media (min-width: 768px) {
+	.main {
+		&__item {
+			&-icon {
+				font-size: 30rem;
+			}
+		}
+	}
 }
